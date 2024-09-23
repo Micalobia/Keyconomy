@@ -3,8 +3,8 @@
         "pack_format": 48,
         "description": [
             {
-                "text":"Adds a per-player and global settings interface",
-                "color": "green"
+                "text":"Adds a trial key-based economy, with shops and cash included!",
+                "color": "gold"
             }
         ]
     }

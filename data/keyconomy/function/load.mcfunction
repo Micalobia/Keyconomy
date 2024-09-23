@@ -18,3 +18,4 @@ scoreboard players set #100 key.math 100
 execute unless data storage keyconomy:data config run data modify storage keyconomy:data config merge value {trial_key:25,ominous_key:100}
 execute store result score #key.trial key.config run data get storage keyconomy:data config.trial_key
 execute store result score #key.ominous key.config run data get storage keyconomy:data config.ominous_key
+data modify storage keyconomy:data macro set value {}

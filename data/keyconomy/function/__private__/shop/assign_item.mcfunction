@@ -1,0 +1,1 @@
+$item replace entity @s container.0 from block ~ ~ ~ container.$(slot)
