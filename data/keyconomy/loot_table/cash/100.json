@@ -1,0 +1,56 @@
+{
+    "type": "empty",
+    "pools": [
+        {
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "paper",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "enchantment_glint_override": true,
+                                "custom_model_data": 13572
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "translate": "item.keyconomy.cash",
+                                "fallback": "Cash",
+                                "color": "gold",
+                                "bold": true,
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "mode": "append",
+                            "lore": [
+                                {
+                                    "translate": "item.keyconomy.cash.amount",
+                                    "fallback": "Amount: %s",
+                                    "color": "dark_purple",
+                                    "italic": false,
+                                    "with": [
+                                        {
+                                            "text": "100",
+                                            "color": "light_purple",
+                                            "underlined": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{key.cash:1b,key.cash.amount:100}"
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "pack": {
+        "pack_format": 48,
+        "description": [
+            {
+                "text":"Adds a per-player and global settings interface",
+                "color": "green"
+            }
+        ]
+    }
+}
