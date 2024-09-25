@@ -1,0 +1,26 @@
+{
+    "parent": "keyconomy:root",
+    "criteria": {
+        "placed": {
+            "trigger": "placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "hopper",
+                                    "dropper"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "keyconomy:__private__/shop/placed_invalid"
+    }
+}

@@ -7,6 +7,7 @@ scoreboard objectives add key.config dummy
 scoreboard objectives add key.math dummy
 scoreboard objectives add key.shop.id dummy
 scoreboard objectives add key.player.id dummy
+scoreboard objectives add key.timer dummy
 
 scoreboard players add #key.id key.player.id 0
 scoreboard players add #key.id key.shop.id 0

@@ -1,0 +1,1 @@
+$scoreboard players operation $(name) key.money += #key.price key.math
