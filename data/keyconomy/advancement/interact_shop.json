@@ -1,0 +1,17 @@
+{
+    "parent": "keyconomy:root",
+    "criteria": {
+        "unlocked": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:interaction",
+                    "nbt": "{Tags:[\"key.shop\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "keyconomy:__private__/events/interact_shop"
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "type": "empty",
+    "pools": [
+        {
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "paper",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "enchantment_glint_override": true,
+                                "custom_model_data": 13573
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "mode": "append",
+                            "lore": [
+                                {
+                                    "translate": "item.keyconomy.shop.key",
+                                    "fallback": "The key to the shop you're restocking",
+                                    "color": "dark_purple",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{key.random:1b}"
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}
