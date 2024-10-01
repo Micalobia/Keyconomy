@@ -1,0 +1,1 @@
+clear @s paper[minecraft:custom_data~{key.random:1b}]

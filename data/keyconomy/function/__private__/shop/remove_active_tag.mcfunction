@@ -1,0 +1,1 @@
+execute at @s as @e[tag=key.shop,tag=key.shop.active,distance=..1.5] if score @s key.shop.id = @n[tag=key.shop.active,distance=..1.81] key.shop.id run tag @s remove key.shop.active

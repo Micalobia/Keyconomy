@@ -16,7 +16,10 @@ scoreboard players set #5 key.math 5
 scoreboard players set #25 key.math 25
 scoreboard players set #100 key.math 100
 
-execute unless data storage keyconomy:data config run data modify storage keyconomy:data config merge value {trial_key:25,ominous_key:100}
+execute unless data storage keyconomy:data config run data modify storage keyconomy:data config merge value {trial_key:25,ominous_key:100,max_stock:2673}
 execute store result score #key.trial key.config run data get storage keyconomy:data config.trial_key
 execute store result score #key.ominous key.config run data get storage keyconomy:data config.ominous_key
+execute store result score #key.max_stock key.config run data get storage keyconomy:data config.max_stock
 data modify storage keyconomy:data macro set value {}
+
+schedule function keyconomy:periodic 1s replace

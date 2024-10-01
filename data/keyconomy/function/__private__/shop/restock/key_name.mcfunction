@@ -1,0 +1,1 @@
+$data modify entity @n[type=item_display,tag=key.temp] item.components.minecraft:custom_name set value '"$(random)"'
