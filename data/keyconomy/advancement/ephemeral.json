@@ -1,0 +1,77 @@
+{
+    "parent": "keyconomy:root",
+    "criteria": {
+        "opened_inventory_block": {
+            "trigger": "default_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "#keyconomy:ephemeral"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "opened_inventory_mob": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "#keyconomy:ephemeral"
+                }
+            }
+        },
+        "picked_up": {
+            "trigger": "thrown_item_picked_up_by_player",
+            "conditions": {
+                "item": {
+                    "items": "paper",
+                    "components": {
+                        "custom_data": "{key.random:1b}"
+                    }
+                }
+            }
+        },
+        "opened_wrong_barrel": {
+            "trigger": "default_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "barrel"
+                            }
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "barrier"
+                                }
+                            },
+                            "offsetY": 1
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "opened_inventory_block",
+            "opened_inventory_mob",
+            "picked_up",
+            "opened_wrong_barrel"
+        ]
+    ],
+    "rewards": {
+        "function": "keyconomy:__private__/events/ephemeral"
+    }
+}

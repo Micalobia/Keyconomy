@@ -9,6 +9,9 @@ scoreboard objectives add key.shop.id dummy
 scoreboard objectives add key.player.id dummy
 scoreboard objectives add key.timer dummy
 
+scoreboard objectives add key.dropped minecraft.custom:minecraft.drop
+scoreboard objectives add key.barrel_broken minecraft.mined:minecraft.barrel
+
 scoreboard players add #key.id key.player.id 0
 scoreboard players add #key.id key.shop.id 0
 

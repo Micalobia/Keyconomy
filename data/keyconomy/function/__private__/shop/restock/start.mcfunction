@@ -1,6 +1,6 @@
 execute if function keyconomy:__private__/valid/shop/restock/already_restocking run return fail
 execute if function keyconomy:__private__/valid/shop/restock/hands_full run return fail
-say Restock Mode
+execute if function keyconomy:__private__/valid/shop/restock/riding_ephemeral run return fail
 tag @s add key.restocking
 tag @n[type=marker,tag=key.shop.active] add key.restocking
 data merge entity @n[type=interaction,tag=key.shop.active] {width:1.005f,height:1.005f}

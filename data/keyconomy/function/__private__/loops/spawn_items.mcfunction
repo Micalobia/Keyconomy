@@ -1,3 +1,4 @@
+execute if score #key.value key.math matches ..0 run return fail
 summon item ~ ~ ~ {PickupDelay:0s,Tags:["key.temp"],Item:{id:"stone"}}
 item replace entity @n[type=item,tag=key.temp] container.0 from entity @s container.0
 data modify entity @n[type=item,tag=key.temp] Owner set from entity @p[tag=key.current_player] UUID
