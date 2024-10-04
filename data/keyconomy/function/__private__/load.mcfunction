@@ -21,7 +21,7 @@ scoreboard players set #100 key.math 100
 
 execute unless data storage keyconomy:config trial_key run data modify storage keyconomy:config trial_key set value 25
 execute unless data storage keyconomy:config ominous_key run data modify storage keyconomy:config ominous_key set value 100
-execute unless data storage keyconomy:config max_stock run data modify storage keyconomy:config max_stock set value 2673
+execute unless data storage keyconomy:config max_stock run data modify storage keyconomy:config max_stock set value 5000
 data modify storage keyconomy:data macro set value {}
 
 schedule function keyconomy:__private__/periodic 1s replace
