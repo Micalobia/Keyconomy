@@ -20,6 +20,6 @@
         }
     },
     "rewards": {
-        "function": "keyconomy:commands/sell"
+        "function": "keyconomy:__private__/commands/sell"
     }
 }

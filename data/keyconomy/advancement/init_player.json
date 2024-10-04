@@ -23,6 +23,6 @@
         }
     },
     "rewards": {
-        "function": "keyconomy:init_player"
+        "function": "keyconomy:__private__/init_player"
     }
 }

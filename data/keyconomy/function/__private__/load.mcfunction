@@ -24,4 +24,4 @@ execute unless data storage keyconomy:config ominous_key run data modify storage
 execute unless data storage keyconomy:config max_stock run data modify storage keyconomy:config max_stock set value 2673
 data modify storage keyconomy:data macro set value {}
 
-schedule function keyconomy:periodic 1s replace
+schedule function keyconomy:__private__/periodic 1s replace

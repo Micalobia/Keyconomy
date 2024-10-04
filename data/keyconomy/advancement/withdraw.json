@@ -20,6 +20,6 @@
         }
     },
     "rewards": {
-        "function": "keyconomy:commands/withdraw"
+        "function": "keyconomy:__private__/commands/withdraw"
     }
 }

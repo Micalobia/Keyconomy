@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "keyconomy:load"
+        "keyconomy:__private__/load"
     ]
 }

@@ -20,6 +20,6 @@
         }
     },
     "rewards": {
-        "function": "keyconomy:commands/shop"
+        "function": "keyconomy:__private__/commands/shop"
     }
 }
