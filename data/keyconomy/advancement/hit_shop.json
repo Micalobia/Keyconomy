@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "keyconomy:__private__/events/hit_shop"
+        "function": "keyconomy:__private__/shop/hit/trigger"
     }
 }

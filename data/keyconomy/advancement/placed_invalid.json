@@ -21,6 +21,6 @@
         }
     },
     "rewards": {
-        "function": "keyconomy:__private__/shop/placed_invalid"
+        "function": "keyconomy:__private__/shop/misc/placed_invalid"
     }
 }

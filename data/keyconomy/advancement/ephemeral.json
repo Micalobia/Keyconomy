@@ -72,6 +72,6 @@
         ]
     ],
     "rewards": {
-        "function": "keyconomy:__private__/events/ephemeral"
+        "function": "keyconomy:__private__/shop/restock/ephemeral"
     }
 }

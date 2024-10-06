@@ -3,7 +3,6 @@ scoreboard objectives add Withdraw trigger {"text":"Withdraw","color":"gold","cl
 scoreboard objectives add MakeShop trigger {"text":"Make Shop","color":"gold","clickEvent":{"action":"run_command","value":"/trigger MakeShop"}}
 
 scoreboard objectives add key.money dummy {"text":"Money","color":"gold","bold":true}
-scoreboard objectives add key.config dummy
 scoreboard objectives add key.math dummy
 scoreboard objectives add key.shop.id dummy
 scoreboard objectives add key.player.id dummy

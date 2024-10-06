@@ -20,6 +20,6 @@
         }
     },
     "rewards": {
-        "function": "keyconomy:__private__/events/broke_barrel"
+        "function": "keyconomy:__private__/shop/misc/broke_barrel"
     }
 }

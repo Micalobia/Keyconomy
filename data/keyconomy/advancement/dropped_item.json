@@ -19,6 +19,6 @@
         }
     },
     "rewards": {
-        "function": "keyconomy:__private__/events/dropped_item"
+        "function": "keyconomy:__private__/shop/misc/dropped_item"
     }
 }
