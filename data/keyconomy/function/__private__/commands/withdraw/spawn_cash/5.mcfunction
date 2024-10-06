@@ -1,2 +1,7 @@
-loot spawn ~ ~ ~ loot keyconomy:cash/5
-scoreboard players remove @s Withdraw 5
+scoreboard players operation #key.value key.math = @s Withdraw
+scoreboard players operation #key.value key.math /= #5 key.math
+summon item_display ~ ~ ~ {Tags:["key.temp"],view_range:0}
+loot replace entity @n[type=item_display,tag=key.temp] container.0 loot keyconomy:cash/5
+execute as @n[type=item_display,tag=key.temp] run function keyconomy:__private__/misc/spawn_items
+kill @n[type=item_display,tag=key.temp]
+scoreboard players operation @s Withdraw %= #5 key.math
