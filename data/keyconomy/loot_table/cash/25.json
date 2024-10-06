@@ -11,7 +11,8 @@
                             "function": "set_components",
                             "components": {
                                 "enchantment_glint_override": true,
-                                "custom_model_data": 13571
+                                "custom_model_data": 13571,
+                                "fire_resistant": {}
                             }
                         },
                         {
