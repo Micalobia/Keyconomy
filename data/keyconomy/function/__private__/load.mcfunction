@@ -1,6 +1,7 @@
 scoreboard objectives add SellKeys trigger {"text":"Sell Keys","color":"gold","clickEvent":{"action":"run_command","value":"/trigger SellKeys"}}
 scoreboard objectives add Withdraw trigger {"text":"Withdraw","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Withdraw"}}
 scoreboard objectives add MakeShop trigger {"text":"Make Shop","color":"gold","clickEvent":{"action":"run_command","value":"/trigger MakeShop"}}
+scoreboard objectives add CreativeShop trigger {"text":"Creative Shop","color":"gold","clickEvent":{"action":"run_command","value":"/trigger CreativeShop"}}
 
 scoreboard objectives add key.money dummy {"text":"Money","color":"gold","bold":true}
 scoreboard objectives add key.math dummy

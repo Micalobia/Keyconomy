@@ -1,5 +1,5 @@
 tellraw @s "\n=========================="
-tellraw @s \
+tellraw @s[tag=!key.shop.creative] \
 {\
     "translate":"keyconomy.shop.details.owner",\
     "fallback":"Owner: %s",\
@@ -7,6 +7,17 @@ tellraw @s \
     "with":[\
         {"translate":"chat.square_brackets","with":[\
             {"entity":"@n[type=marker,tag=key.shop.active]","nbt":"data.owner.text","interpret":true,"color":"green"}\
+        ]}\
+    ]\
+}
+tellraw @s[tag=key.shop.creative] \
+{\
+    "translate":"keyconomy.shop.details.creative_shop",\
+    "fallback":"Owner: %s",\
+    "color":"#9bcfff",\
+    "with":[\
+        {"translate":"chat.square_brackets","with":[\
+            {"translate":"selectWorld.gameMode.creative","color":"dark_green"}\
         ]}\
     ]\
 }
@@ -32,13 +43,18 @@ tellraw @s \
         ]}\
     ]\
 }
-execute if score #key.stock key.math >= #key.count key.math run tellraw @s \
+execute if score #key.stock key.math >= #key.count key.math run tellraw @s[tag=key.shop.creative] \
+{\
+    "translate":"options.framerateLimit.max",\
+    "color": "dark_purple"\
+}
+execute if score #key.stock key.math >= #key.count key.math run tellraw @s[tag=!key.shop.creative] \
 {\
     "translate":"keyconomy.shop.details.in_stock",\
     "fallback":"In stock!",\
     "color": "green"\
 }
-execute if score #key.stock key.math < #key.count key.math run tellraw @s \
+execute if score #key.stock key.math < #key.count key.math run tellraw @s[tag=!key.shop.creative] \
 {\
     "translate":"keyconomy.shop.details.in_stock",\
     "fallback":"Out of stock!",\
