@@ -1,18 +1,15 @@
 {
     "parent": "keyconomy:root",
     "criteria": {
-        "placed": {
-            "trigger": "placed_block",
+        "opened_inventory_block": {
+            "trigger": "default_block_use",
             "conditions": {
                 "location": [
                     {
                         "condition": "location_check",
                         "predicate": {
                             "block": {
-                                "blocks": [
-                                    "hopper",
-                                    "dropper"
-                                ]
+                                "blocks": "barrel"
                             }
                         }
                     }
@@ -21,6 +18,6 @@
         }
     },
     "rewards": {
-        "function": "keyconomy:__private__/shop/misc/placed_invalid"
+        "function": "keyconomy:__private__/shop/restock/maybe_ephemeral"
     }
 }

@@ -5,8 +5,7 @@ execute summon interaction run function keyconomy:__private__/shop/create/intera
 execute summon item_display run function keyconomy:__private__/shop/create/item_display
 execute summon text_display run function keyconomy:__private__/shop/create/count
 execute summon text_display run function keyconomy:__private__/shop/create/price
-data remove block ~ ~ ~ Items
-setblock ~ ~1 ~ barrier
+setblock ~ ~ ~ barrier
 scoreboard players add #key.id key.shop.id 1
 tag @e[limit=5,tag=key.temp,distance=..2] remove key.temp
 tag @s remove key.current_player

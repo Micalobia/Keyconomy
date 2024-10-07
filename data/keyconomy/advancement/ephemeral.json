@@ -34,41 +34,13 @@
                     }
                 }
             }
-        },
-        "opened_wrong_barrel": {
-            "trigger": "default_block_use",
-            "conditions": {
-                "location": [
-                    {
-                        "condition": "location_check",
-                        "predicate": {
-                            "block": {
-                                "blocks": "barrel"
-                            }
-                        }
-                    },
-                    {
-                        "condition": "inverted",
-                        "term": {
-                            "condition": "location_check",
-                            "predicate": {
-                                "block": {
-                                    "blocks": "barrier"
-                                }
-                            },
-                            "offsetY": 1
-                        }
-                    }
-                ]
-            }
         }
     },
     "requirements": [
         [
             "opened_inventory_block",
             "opened_inventory_mob",
-            "picked_up",
-            "opened_wrong_barrel"
+            "picked_up"
         ]
     ],
     "rewards": {

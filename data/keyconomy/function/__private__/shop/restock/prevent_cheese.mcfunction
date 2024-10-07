@@ -1,0 +1,2 @@
+execute align xyz positioned ~-1 ~-1 ~-1 as @e[type=hopper_minecart,dx=2,dz=2] run damage @s 10000
+execute positioned ~ ~-1 ~ if block ~ ~ ~ hopper run data modify block ~ ~ ~ TransferCooldown set value 2
