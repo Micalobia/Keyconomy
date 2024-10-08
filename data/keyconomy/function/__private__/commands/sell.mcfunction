@@ -3,7 +3,7 @@ scoreboard players set @s SellKeys 0
 execute if entity @s[tag=key.no_sell] run return fail
 scoreboard players set #key.total key.math 0
 execute store result score #key.trial key.math run data get storage keyconomy:config trial_key
-execute store result score #key.ominous key.math run data get storage keyconomy:config trial_key
+execute store result score #key.ominous key.math run data get storage keyconomy:config ominous_key
 
 execute store result score #key.value key.math run clear @s trial_key
 scoreboard players operation #key.value key.math *= #key.trial key.math
