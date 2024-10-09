@@ -12,6 +12,8 @@
         "donkey",
         "mule",
         "llama",
-        "camel"
+        "camel",
+        "item_frame",
+        "glow_item_frame"
     ]
 }

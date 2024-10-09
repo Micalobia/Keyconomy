@@ -1,0 +1,24 @@
+{
+    "parent": "keyconomy:root",
+    "criteria": {
+        "item_frame": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "#keyconomy:item_frame"
+                },
+                "item": {
+                    "items": "paper",
+                    "components": {
+                        "custom_data": {
+                            "key.random": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "keyconomy:__private__/shop/restock/ephemeral_item_frame"
+    }
+}

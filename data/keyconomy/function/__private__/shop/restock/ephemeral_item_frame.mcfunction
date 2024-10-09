@@ -1,0 +1,2 @@
+advancement revoke @s only keyconomy:ephermal_item_frame
+execute as @e[type=#keyconomy:item_frame,distance=..10] if data entity @s Item.components."minecraft:custom_data"."key.random" run data remove entity @s Item
