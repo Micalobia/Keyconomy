@@ -4,7 +4,7 @@ tag @s add key.current_player
 execute \
     as @e[type=marker,tag=key.shop,distance=..10] \
     at @s \
-    unless block ~ ~ ~ barrel \
+    if block ~ ~ ~ air \
     run function keyconomy:__private__/shop/util/tag_as_active
 execute as @n[type=marker,tag=key.shop.active,distance=..10] at @a if score @s key.player.id = @p key.player.id run tag @p add key.owner
 execute if entity @s[tag=key.owner] run function keyconomy:__private__/shop/hit/owner/destroy
