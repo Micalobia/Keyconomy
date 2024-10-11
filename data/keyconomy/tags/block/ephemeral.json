@@ -21,7 +21,6 @@
         "cartography_table",
         "loom",
         "stonecutter",
-        "smithing_table",
-        "crafter"
+        "smithing_table"
     ]
 }
