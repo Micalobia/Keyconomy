@@ -1,0 +1,15 @@
+{
+    "version": "1.0.3",
+    "modid": "keyconomy",
+    "name": "Keyconomy",
+    "description": "An economy datapack based around trial keys. It has shops included!",
+    "contributors": {
+        "Micalobia": "Owner"
+    },
+    "slug": "qq3qELzp",
+    "homepage": "https://modrinth.com/datapack/keyconomy",
+    "sources": "https://github.com/Micalobia/Keyconomy",
+    "issues": "https://github.com/Micalobia/Keyconomy/issues",
+    "license": "MIT",
+    "icon": "pack.png"
+}
